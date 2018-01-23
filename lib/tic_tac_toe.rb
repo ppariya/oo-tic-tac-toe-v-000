@@ -84,7 +84,7 @@ class TicTacToe
       @board[player.first]
     end
   end
-  def player
+  def play
     while !over?
       turn
     end
