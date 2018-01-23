@@ -80,13 +80,8 @@ class TicTacToe
     full? || won? || draw?
   end
   def winner
-    if draw? || !full? && !won?
-      nil
-    elsif @board[won?(@board)[0]] == "X"
-      "X"
-    elsif @board[won?(@board)[0]] == "O"
-      "O"
-    end
+    if player = won?
+      @board[player]
   end
 
 end
