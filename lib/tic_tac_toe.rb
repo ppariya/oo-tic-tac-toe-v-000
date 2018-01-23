@@ -79,4 +79,14 @@ class TicTacToe
   def over?
     full? || won? || draw?
   end
+  def winner
+    if draw? || !full? && !won?
+      nil
+    elsif @board[won?(@board)[0]] == "X"
+      "X"
+    elsif @board[won?(@board)[0]] == "O"
+      "O"
+    end
+  end
+
 end
