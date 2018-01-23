@@ -80,8 +80,8 @@ class TicTacToe
     full? || won? || draw?
   end
   def winner
-    if player = won?
-      @board[player.first]
+    if WIN_COMBINATIONS = won?
+      @board[WIN_COMBINATIONS.first]
     end
   end
   def play
