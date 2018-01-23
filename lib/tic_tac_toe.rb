@@ -70,7 +70,7 @@ class TicTacToe
   end
   def full?
     @board.all? do |player_char|
-      layer_char == "X" || player_char == "O"
+      player_char == "X" || player_char == "O"
     end
   end
   def draw?
