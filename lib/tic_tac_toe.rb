@@ -81,7 +81,7 @@ class TicTacToe
   end
   def winner
     if player = won?
-      @board[player]
+      @board[player.first]
     end
   end
 
